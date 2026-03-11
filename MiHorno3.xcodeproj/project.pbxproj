@@ -45,6 +45,46 @@
 			path = MiHorno3UITests;
 			sourceTree = "<group>";
 		};
+		931DBEA12F6224B500B7CA0C /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		931DBEA32F6224D100B7CA0C /* MiHorno3Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiHorno3Models;
+			sourceTree = "<group>";
+		};
+		931DBEA52F6224F000B7CA0C /* MiHorno3Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiHorno3Views;
+			sourceTree = "<group>";
+		};
+		931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MiHorno3ViewModels;
+			sourceTree = "<group>";
+		};
+		931DBEA82F62250B00B7CA0C /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		931DBEAA2F62251600B7CA0C /* Networking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		931DBEAB2F62252400B7CA0C /* ARComponents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ARComponents;
+			sourceTree = "<group>";
+		};
+		931DBEAC2F62253200B7CA0C /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +115,18 @@
 		931DBE6D2F62249A00B7CA0C = {
 			isa = PBXGroup;
 			children = (
+				931DBEAC2F62253200B7CA0C /* Resources */,
+				931DBEAB2F62252400B7CA0C /* ARComponents */,
+				931DBEA52F6224F000B7CA0C /* MiHorno3Views */,
+				931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */,
 				931DBE782F62249A00B7CA0C /* MiHorno3 */,
 				931DBE862F62249B00B7CA0C /* MiHorno3Tests */,
 				931DBE902F62249B00B7CA0C /* MiHorno3UITests */,
 				931DBE772F62249A00B7CA0C /* Products */,
+				931DBEA12F6224B500B7CA0C /* App */,
+				931DBEA32F6224D100B7CA0C /* MiHorno3Models */,
+				931DBEA82F62250B00B7CA0C /* Services */,
+				931DBEAA2F62251600B7CA0C /* Networking */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +157,14 @@
 			);
 			fileSystemSynchronizedGroups = (
 				931DBE782F62249A00B7CA0C /* MiHorno3 */,
+				931DBEA12F6224B500B7CA0C /* App */,
+				931DBEA32F6224D100B7CA0C /* MiHorno3Models */,
+				931DBEA52F6224F000B7CA0C /* MiHorno3Views */,
+				931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */,
+				931DBEA82F62250B00B7CA0C /* Services */,
+				931DBEAA2F62251600B7CA0C /* Networking */,
+				931DBEAB2F62252400B7CA0C /* ARComponents */,
+				931DBEAC2F62253200B7CA0C /* Resources */,
 			);
 			name = MiHorno3;
 			packageProductDependencies = (
