@@ -42,6 +42,94 @@ app.get("/challenges", (req, res) => {
 // Sebastian
 
 //Jorge
+//Jorge
+
+// Obtener nodo por QR escaneado
+app.get("/map/node/:qr", (req, res) => {
+
+    const qr = req.params.qr
+
+    const query = `
+        SELECT id, nombre, x, y, node_type
+        FROM insidemap
+        WHERE qr_code = ?
+    `
+
+    db.query(query, [qr], (err, results) => {
+
+        if (err) {
+            res.status(500).json(err)
+        } else {
+            res.json(results[0])
+        }
+
+    })
+
+})
+
+
+// Obtener todos los baños
+app.get("/map/bathrooms", (req, res) => {
+
+    const query = `
+        SELECT id, nombre, x, y
+        FROM insidemap
+        WHERE node_type = 'bathroom'
+    `
+
+    db.query(query, (err, results) => {
+
+        if (err) {
+            res.status(500).json(err)
+        } else {
+            res.json(results)
+        }
+
+    })
+
+})
+
+
+// Obtener todo el grafo (nodos + conexiones)
+app.get("/map/graph", (req, res) => {
+
+    const nodesQuery = `
+        SELECT id, nombre, x, y, node_type
+        FROM insidemap
+    `
+
+    const edgesQuery = `
+        SELECT from_node, to_node, weight
+        FROM insidemap_edges
+    `
+
+    db.query(nodesQuery, (err, nodes) => {
+
+        if (err) {
+            res.status(500).json(err)
+        } else {
+
+            db.query(edgesQuery, (err2, edges) => {
+
+                if (err2) {
+                    res.status(500).json(err2)
+                } else {
+
+                    res.json({
+                        nodes: nodes,
+                        edges: edges
+                    })
+
+                }
+
+            })
+
+        }
+
+    })
+
+})
+
 
 app.listen(3000, () => {
     console.log("API running on port 3000")
