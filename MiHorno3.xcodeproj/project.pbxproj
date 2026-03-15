@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		931DBEBE2F6234B000B7CA0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 931DBEBD2F6234B000B7CA0C /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		931DBE842F62249B00B7CA0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		931DBE762F62249A00B7CA0C /* MiHorno3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiHorno3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931DBE832F62249B00B7CA0C /* MiHorno3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiHorno3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931DBE8D2F62249B00B7CA0C /* MiHorno3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiHorno3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		931DBEBD2F6234B000B7CA0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -50,19 +55,19 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		931DBEA32F6224D100B7CA0C /* MiHorno3Models */ = {
+		931DBEA32F6224D100B7CA0C /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MiHorno3Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		931DBEA52F6224F000B7CA0C /* MiHorno3Views */ = {
+		931DBEA52F6224F000B7CA0C /* Views */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MiHorno3Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */ = {
+		931DBEA62F6224FC00B7CA0C /* ViewModels */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MiHorno3ViewModels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		931DBEA82F62250B00B7CA0C /* Services */ = {
@@ -115,16 +120,17 @@
 		931DBE6D2F62249A00B7CA0C = {
 			isa = PBXGroup;
 			children = (
+				931DBEBD2F6234B000B7CA0C /* README.md */,
 				931DBEAC2F62253200B7CA0C /* Resources */,
 				931DBEAB2F62252400B7CA0C /* ARComponents */,
-				931DBEA52F6224F000B7CA0C /* MiHorno3Views */,
-				931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */,
+				931DBEA52F6224F000B7CA0C /* Views */,
+				931DBEA62F6224FC00B7CA0C /* ViewModels */,
 				931DBE782F62249A00B7CA0C /* MiHorno3 */,
 				931DBE862F62249B00B7CA0C /* MiHorno3Tests */,
 				931DBE902F62249B00B7CA0C /* MiHorno3UITests */,
 				931DBE772F62249A00B7CA0C /* Products */,
 				931DBEA12F6224B500B7CA0C /* App */,
-				931DBEA32F6224D100B7CA0C /* MiHorno3Models */,
+				931DBEA32F6224D100B7CA0C /* Models */,
 				931DBEA82F62250B00B7CA0C /* Services */,
 				931DBEAA2F62251600B7CA0C /* Networking */,
 			);
@@ -158,9 +164,9 @@
 			fileSystemSynchronizedGroups = (
 				931DBE782F62249A00B7CA0C /* MiHorno3 */,
 				931DBEA12F6224B500B7CA0C /* App */,
-				931DBEA32F6224D100B7CA0C /* MiHorno3Models */,
-				931DBEA52F6224F000B7CA0C /* MiHorno3Views */,
-				931DBEA62F6224FC00B7CA0C /* MiHorno3ViewModels */,
+				931DBEA32F6224D100B7CA0C /* Models */,
+				931DBEA52F6224F000B7CA0C /* Views */,
+				931DBEA62F6224FC00B7CA0C /* ViewModels */,
 				931DBEA82F62250B00B7CA0C /* Services */,
 				931DBEAA2F62251600B7CA0C /* Networking */,
 				931DBEAB2F62252400B7CA0C /* ARComponents */,
@@ -268,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931DBEBE2F6234B000B7CA0C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

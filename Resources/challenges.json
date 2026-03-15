@@ -1,0 +1,38 @@
+{
+  "challenges": [
+    {
+      "id": "c1a1a1a1-0001-0001-0001-000000000001",
+      "title": "Vive la Zona Química",
+      "description": "Explora la zona química y vive la experiencia",
+      "icon": "flask.fill",
+      "badgeName": "Químico del Horno",
+      "zone": "cientifica",
+      "difficulty": "Fácil",
+      "xpReward": 300,
+      "zoneUnlocked": true,
+      "isFeatured": false,
+      "tasks": [
+        { "id": "t1-001", "title": "Paso 1: Asiste a la zona química", "isCompleted": false },
+        { "id": "t1-002", "title": "Paso 2: ¿Qué fue lo que más te gustó?", "isCompleted": false },
+        { "id": "t1-003", "title": "Paso 3: Recuerda la zona con una foto", "isCompleted": false }
+      ]
+    },
+    {
+      "id": "c4a4a4a4-0004-0004-0004-000000000004",
+      "title": "Vive la Minería",
+      "description": "Adéntrate en la historia minera del Horno 3",
+      "icon": "mountain.2.fill",
+      "badgeName": "Minero del Horno",
+      "zone": "historia",
+      "difficulty": "Fácil",
+      "xpReward": 250,
+      "zoneUnlocked": false,
+      "isFeatured": false,
+      "tasks": [
+        { "id": "t4-001", "title": "Paso 1: Explota la dinamita", "isCompleted": false },
+        { "id": "t4-002", "title": "Paso 2: Visita la mina", "isCompleted": false },
+        { "id": "t4-003", "title": "Paso 3: Recuerda la zona con una foto", "isCompleted": false }
+      ]
+    }
+  ]
+}
